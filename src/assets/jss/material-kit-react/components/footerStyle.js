@@ -26,7 +26,8 @@ const footerStyle = {
     textAlign: "center",
     display: "flex",
     zIndex: "2",
-    position: "relative"
+    position: "relative",
+    backgroundColor: '#272727'
   },
   a: {
     color: primaryColor,
@@ -46,8 +47,15 @@ const footerStyle = {
   },
   inlineBlock: {
     display: "inline-block",
+    margin: "10px 20px",
     padding: "0px",
-    width: "auto"
+    width: "auto",
+    color: '#939393',
+    fontSize: 20
+  },
+  text:{
+    color: '#939393',
+    fontSize: 16
   },
   icon: {
     width: "18px",
