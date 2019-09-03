@@ -12,18 +12,20 @@ const buttonStyle = {
   button: {
     minHeight: "auto",
     minWidth: "auto",
-    backgroundColor: grayColor,
+    backgroundColor: 'transparent',
     color: "#FFFFFF",
-    boxShadow:
-      "0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12)",
-    border: "none",
+    border: "1px solid #fff",
     borderRadius: "3px",
     position: "relative",
-    padding: "12px 30px",
+    padding: "16px 22px",
     margin: ".3125rem 1px",
-    fontSize: "12px",
+    fontSize: "21px",
+    '@media (max-width:426px)': {
+      fontSize: "12px",
+      padding: "6px",
+    },
     fontWeight: "400",
-    textTransform: "uppercase",
+    // textTransform: "uppercase",
     letterSpacing: "0",
     willChange: "box-shadow, transform",
     transition:
@@ -35,10 +37,8 @@ const buttonStyle = {
     touchAction: "manipulation",
     cursor: "pointer",
     "&:hover,&:focus": {
-      color: "#FFFFFF",
-      backgroundColor: grayColor,
-      boxShadow:
-        "0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2)"
+      color: "#000",
+      backgroundColor: '#fff',
     },
     "& .fab,& .fas,& .far,& .fal,& .material-icons": {
       position: "relative",
@@ -75,13 +75,14 @@ const buttonStyle = {
     width: "100%"
   },
   primary: {
-    backgroundColor: primaryColor,
+    backgroundColor: '#fff',
+    border: "1px solid #9c27b0",
+    color: primaryColor,
     boxShadow:
       "0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12)",
     "&:hover,&:focus": {
       backgroundColor: primaryColor,
-      boxShadow:
-        "0 14px 26px -12px rgba(156, 39, 176, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2)"
+      color: '#fff'
     }
   },
   info: {
@@ -285,9 +286,9 @@ const buttonStyle = {
     paddingLeft: "12px",
     paddingRight: "12px",
     fontSize: "20px",
-    height: "41px",
-    minWidth: "41px",
-    width: "41px",
+    height: "51px",
+    minWidth: "51px",
+    width: "51px",
     "& .fab,& .fas,& .far,& .fal,& svg,& .material-icons": {
       marginRight: "0px"
     },

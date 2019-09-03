@@ -19,7 +19,7 @@ export default function Section2() {
           <GridItem xs={12} sm={12} md={6}>
             <div className={classes.body}>
               <h5 className={classes.title}>WHAT WE DO</h5>
-              <h1 className={classes.content}>Product Development for Better Business</h1>
+              {/* <h1 className={classes.content}>Product Development for Better Business</h1> */}
               <h3 className={classes.description}>Desert Software is for all types of business, creating innovative products that empower our customers to grow.</h3>
 
               <Item title={'OHS Management Systems'} content={'We develop Apps with dashboards to help customers complete OHS audit.'}/>

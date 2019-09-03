@@ -17,17 +17,29 @@ export default {
   },
   title: {
     color: "#9c27B0 !important",
-    fontWeight: 500
+    fontWeight: 500,
   },
   content: {
     fontSize: "2.8125rem",
     color: '#343434',
     fontWeight: 500,
-    lineHeight: 1.2
+    lineHeight: 1.2,
+    '@media (max-width:426px)': {
+      fontSize: "2rem",
+    },
   },
   description: {
     color: "#6c757d !important",
-    fontWeight: "400 !important"
+    fontWeight: "400 !important",
+    '@media (max-width:426px)': {
+      fontSize: 13,
+      lineHeight: 1.2
+    },
+  },
+  imageCardTop: {
+    height: "180px", 
+    width: "100%", 
+    display: "block",
   },
   item: {
     color: "#434343 !important",
@@ -60,14 +72,21 @@ export default {
     color: "#fff"
   },
   view:{
-    paddingBottom: '50px'
+    paddingBottom: '50px',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
   },
   left: {
     marginLeft: "16px"
   },
   cardTitle: {
     fontWeight: 500,
-    fontSize: 20
+    fontSize: 20,
+    '@media (max-width:426px)': {
+      fontSize: 15,
+    },
   },
   hr: {
     height: 1,
@@ -91,5 +110,11 @@ export default {
     textAlign: "center",
     boxShadow: "1px 3px 10px 1px rgba(0, 0, 0, 0.23)",
     overflow: "hidden",
+    '@media (max-width:426px)': {
+      maxWidth: "245px",
+      height: "350px",
+      marginLeft: "2px",
+      marginRight: "2px",
+    },
   }
 };

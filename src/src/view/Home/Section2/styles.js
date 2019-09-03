@@ -13,7 +13,10 @@ export default {
     backgroundColor: '#F8F8F8'
   },
   body: {
-    paddingLeft: "3rem !important"
+    paddingLeft: "3rem !important",
+    '@media (max-width:426px)': {
+      paddingLeft: "0.1rem !important",
+    },
   },
   title: {
     color: "#9c27B0 !important",

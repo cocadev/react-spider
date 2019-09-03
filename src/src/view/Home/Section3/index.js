@@ -75,7 +75,6 @@ function CardItem(props) {
         }
       </div>
       <img
-        style={{ height: "180px", width: "100%", display: "block" }}
         className={classes.imgCardTop}
         src={require('assets/img/logo/' + props.img)}
         alt="Card-img-cap"

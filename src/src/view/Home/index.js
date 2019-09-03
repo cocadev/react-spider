@@ -1,19 +1,17 @@
 import React from "react";
 import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import Parallax from "components/Parallax/Parallax.js";
 import styles from "./styles";
 
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
-import DialogActions from "@material-ui/core/DialogActions";
 import Close from "@material-ui/icons/Close";
 import IconButton from "@material-ui/core/IconButton";
 import Slide from "@material-ui/core/Slide";
@@ -22,6 +20,7 @@ import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 
+import Carousel from "./Carousel/index";
 import Section1 from "./Section1/index";
 import Section2 from "./Section2/index";
 import Section3 from "./Section3/index";
@@ -54,25 +53,7 @@ export default function LandingPage(props) {
         fixed
         {...rest}
       />
-      <Parallax filter image={require("assets/img/widescreen-8.jpg")}>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={8}>
-              <h4> Optimize NDIS Systems </h4>
-              <h1 className={classes.title}>Innovative Solutions for NDIS Management</h1>
-              <br />
-              <Button
-                size="lg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {'GET IN TOUCH'}
-                <i className="fas fa-long-arrow-alt-right"></i>
-              </Button>
-            </GridItem>
-          </GridContainer>
-        </div>
-      </Parallax>
+      <Carousel />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <Section1 />
@@ -91,6 +72,7 @@ export default function LandingPage(props) {
       <Button
         className={classes.modalBtn}
         color="primary"
+        justIcon
         round
         onClick={() => setClassicModal(true)}
       >
@@ -173,7 +155,7 @@ export default function LandingPage(props) {
               </GridContainer>
             </CardBody>
             <CardFooter className={classes.cardFooter}>
-              <Button simple color="primary" size="lg">
+              <Button color="primary">
                 Send Message 
               </Button>
             </CardFooter>

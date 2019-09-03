@@ -149,7 +149,11 @@ const headerStyle = {
   },
   logo: {
     width: 250,
-    height: 50
+    height: 50,
+    '@media (max-width:360px)': {
+      width: 180,
+      height: 35,
+    },
   }
 };
 

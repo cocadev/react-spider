@@ -28,17 +28,13 @@ export default function Section2() {
             <h5 className={classes.title}>TESTIMONIALS</h5>
             <h1 className={classes.content}>What People Say About Us</h1>
             <h3 className={classes.quote}>We always listen to our customers</h3>
-            <Button
-              size="lg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Button>
               {'GET IN TOUCH'}
-              <i className="fas fa-long-arrow-alt-right"></i>
+              &nbsp;&nbsp;&nbsp;&nbsp;<i className="fas fa-long-arrow-alt-right"></i>
             </Button>
           </GridItem>
           <GridItem xs={12} sm={12} md={8}>
-            <div className={classes.body}>
+            <center className={classes.body}>
               <Carousel {...settings}>
                 <div>
                   <Item title={'Ultimate Group'} />
@@ -49,7 +45,7 @@ export default function Section2() {
                   <Item title={'LincRoads'} />
                 </div>
               </Carousel>
-            </div>
+            </center>
           </GridItem>
         </GridContainer>
       </div>

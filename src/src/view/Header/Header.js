@@ -9,6 +9,7 @@ import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 import styles from "./headerStyle";
+import logo from "assets/img/logo.png"
 
 const useStyles = makeStyles(styles);
 
@@ -35,7 +36,7 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   const brandComponent = <Button className={classes.title}>
-    <img src={require('../../assets/img/logo.png')} alt={'{logo}'} className={classes.logo}/>
+    <img src={logo} alt={'{logo}'} className={classes.logo}/>
   </Button>;
   return (
     <AppBar className={appBarClasses}>

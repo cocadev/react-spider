@@ -5,7 +5,10 @@ import image3 from "assets/img/card-bg-3.jpg"
 export default {
   section: {
     padding: "70px 0",
-    textAlign: "center"
+    textAlign: "center",
+    '@media (max-width:426px)': {
+      padding: "10px 0",
+    },
   },
   description: {
     color: "#fff",
@@ -18,8 +21,11 @@ export default {
     lineHeight:1.875
   },
   card1: {
-    Height: "50px",
     padding: "70px 30px",
+    '@media (max-width:426px)': {
+      padding: "20px 5px 1px 5px",
+      margin: "2px",
+    },
     margin: "8px",
     borderRadius: 5,
     backgroundPosition: "top center",
@@ -27,8 +33,11 @@ export default {
     backgroundImage: "url(" + image1 + ")",
   },
   card2: {
-    Height: "50px",
     padding: "70px 30px",
+    '@media (max-width:426px)': {
+      padding: "20px 5px 1px 5px",
+      margin: "2px",
+    },
     margin: "8px",
     borderRadius: 5,
     backgroundPosition: "top center",
@@ -36,8 +45,11 @@ export default {
     backgroundImage: "url(" + image2 + ")",
   },
   card3: {
-    Height: "50px",
     padding: "70px 30px",
+    '@media (max-width:426px)': {
+      padding: "20px 5px 1px 5px",
+      margin: "2px",
+    },
     margin: "8px",
     borderRadius: 5,
     backgroundPosition: "top center",

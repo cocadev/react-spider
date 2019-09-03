@@ -18,6 +18,9 @@ export default {
   },
   body: {
     paddingLeft: "3rem !important",
+    '@media (max-width:426px)': {
+      paddingLeft: "0.3rem !important",
+    },
   },
   title: {
     color: "#fff !important",
@@ -33,7 +36,11 @@ export default {
     color: "#6c6c6c !important",
     fontSize: 16,
     fontWeight: '400',
-    lineHeight: 1.9
+    lineHeight: 1.9,
+    '@media (max-width:426px)': {
+      fontSize: 13,
+      lineHeight: 1.5,
+    },
   },
   quote: {
     color: "#fff !important",
@@ -70,6 +77,10 @@ export default {
     maxWidth: 300,
     display: "inline-block",
     margin:"40px 20px 100px 20px",
+    '@media (max-width:426px)': {
+      maxWidth: 260,
+      margin:"40px 5px 70px 5px",
+    },
   },
   box: {
     position: "absolute",

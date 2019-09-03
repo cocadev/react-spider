@@ -4,8 +4,6 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
-import CardFooter from "components/Card/CardFooter.js";
-import Button from "components/CustomButtons/Button.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import styles from "./styles";
 
@@ -72,11 +70,11 @@ export default function Section1() {
                         </GridItem>
                       </GridContainer>
                     </CardBody>
-                    <CardFooter className={classes.cardFooter}>
-                      <Button simple color="primary" size="lg">
-                        Send Message &nbsp;&nbsp;<i class="fas fa-paper-plane"></i>
+                    {/* <CardFooter className={classes.cardFooter}>
+                      <Button color="primary">
+                        Send Message &nbsp;&nbsp;<i className="fas fa-paper-plane"></i>
                       </Button>
-                    </CardFooter>
+                    </CardFooter> */}
                   </form>
                 </GridItem>
                 <GridItem xs={12} sm={6} md={5}>
@@ -88,17 +86,17 @@ export default function Section1() {
                     <div className={classes.iconView}>
                       <div>
                         <a href="https://twitter.com/desert_software">
-                          <span className={classes.icon}><i class="fab fa-twitter-square"></i></span>
+                          <span className={classes.icon}><i className="fab fa-twitter-square"></i></span>
                         </a>
                       </div>
                       <div>
                         <a href="https://www.linkedin.com/company/desert-software-management-systems">
-                          <span className={classes.icon}><i class="fab fa-linkedin"></i></span>
+                          <span className={classes.icon}><i className="fab fa-linkedin"></i></span>
                         </a>
                       </div>
                       <div>
                         <a href="https://www.facebook.com/Desert-Software-180734486011135">
-                          <span className={classes.icon}><i class="fab fa-facebook-square"></i></span>
+                          <span className={classes.icon}><i className="fab fa-facebook-square"></i></span>
                         </a>
                       </div>
                     </div>

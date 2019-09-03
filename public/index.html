@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="%PUBLIC_URL%/apple-icon.png"
-    />
-    <!--     Fonts and icons     -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"/>
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/apple-icon.png" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
 
-    <link
-      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-      rel="stylesheet"
-    />
-    <!--
+  <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -39,12 +27,104 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Desert Software</title>
-  </head>
-  <body>
-    <noscript> You need to enable JavaScript to run this app. </noscript>
-    <div id="root"></div>
-    <!--
+  <title>Desert Software</title>
+  <style>
+    .play-btn {
+      width: 68px;
+      height: 68px;
+      
+      background: #ffffff;
+      border-radius: 50%;
+      position: relative;
+      display: block;
+      margin: 170px auto;
+      cursor: pointer;
+      border: #ffffff;
+    }
+
+    /* triangle */
+    .play-btn::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      /* -webkit-transform: translateX(-40%) translateY(-50%); */
+      transform: translateX(-40%) translateY(-50%);
+      transform-origin: center center;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 18px solid #9C27B0;
+      z-index: 100;
+      /* -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19); */
+      transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    /* pulse wave */
+    .play-btn:before {
+      content: "";
+      position: absolute;
+      width: 152%;
+      height: 152%;
+      /* -webkit-animation-delay: 0s; */
+      animation-delay: 0s;
+      /* -webkit-animation: pulsate1 2s; */
+      animation: pulsate1 2s;
+      /* -webkit-animation-direction: forwards; */
+      animation-direction: forwards;
+      /* -webkit-animation-iteration-count: infinite; */
+      animation-iteration-count: infinite;
+      /* -webkit-animation-timing-function: steps; */
+      animation-timing-function: steps;
+      opacity: 1;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, .75);
+      top: -30%;
+      left: -30%;
+      background: rgba(198, 16, 0, 0);
+    }
+
+    @-webkit-keyframes pulsate1 {
+      0% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+        box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+      }
+
+      100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: none;
+
+      }
+    }
+
+    @keyframes pulsate1 {
+      0% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+        box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+      }
+
+      100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: none;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <noscript> You need to enable JavaScript to run this app. </noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -54,5 +134,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
