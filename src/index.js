@@ -8,11 +8,10 @@ import "assets/scss/material-kit-react.scss?v=1.8.0";
 
 // pages for this product
 import Components from "views/Components/Components.js";
-import Home from "src/view/Home";
 import ProfilePage from "views/ProfilePage/ProfilePage.js";
-import LoginPage from "views/LoginPage/LoginPage.js";
 
-
+import Home from "src/view/Home";
+import OurApps from "src/view/OurApps";
 
 var hist = createBrowserHistory();
 
@@ -22,7 +21,7 @@ ReactDOM.render(
       <Switch>
         <Route path="/guide" component={Components} />
         <Route path="/profile-page" component={ProfilePage} />
-        <Route path="/login-page" component={LoginPage} />
+        <Route path="/ourApps" component={OurApps} />
         <Route path="/" component={Home} />
       </Switch>
     </ThemeProvider>

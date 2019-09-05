@@ -62,7 +62,7 @@ function Item(props) {
           <i className="fa fa-quote-left" />
         </div>
         <h4 className={classes.cardTitle}>{props.title}</h4>
-        <h4 >{'Client of Company'}</h4>
+        <h4 className={classes.company}>{'Client of Company'}</h4>
         <div className={classes.hr} />
         <p className={classes.description}>{'"We are a full-lifecycle software development company that combines Experience Design, Complex Engineering to give you the best software product."'}</p>
       </CardBody>

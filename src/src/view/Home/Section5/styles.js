@@ -65,7 +65,11 @@ export default {
   cardTitle: {
     marginTop: 36,
     fontWeight: '500',
-    fontSize: 20
+    fontSize: 20,
+    textAlign: 'left'
+  },
+  company: {
+    textAlign: 'left'
   },
   hr: {
     height: 1,

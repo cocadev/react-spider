@@ -17,8 +17,14 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
 
-      <MenuComponent icon={<i className="fas fa-home size18"></i>} title={'Home'} />
-      <MenuComponent icon={<i className="fas fa-th size18"></i>} title={'OHS Apps'} />
+      <Link to="/">
+        <MenuComponent icon={<i className="fas fa-home size18"></i>} title={'Home'} />
+      </Link>
+
+      <Link to="/ourApps">
+        <MenuComponent icon={<i className="fas fa-th size18"></i>} title={'OHS Apps'} />
+      </Link>
+
       <MenuComponent icon={<i className="fas fa-lightbulb size18"></i>} title={'App Tutorials'} />
       <MenuComponent icon={<i className="fas fa-dollar-sign size18"></i>} title={'Pricing'} />
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -36,7 +37,9 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   const brandComponent = <Button className={classes.title}>
-    <img src={logo} alt={'{logo}'} className={classes.logo}/>
+    <Link to='/'>
+      <img src={logo} alt={'{logo}'} className={classes.logo} />
+    </Link>
   </Button>;
   return (
     <AppBar className={appBarClasses}>
