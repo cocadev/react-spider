@@ -1,55 +1,60 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import React, { useState } from "react";
 import Grid from '@material-ui/core/Grid';
-import NavPills from "components/NavPills/NavPills.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import Button from "components/CustomButtons/Button.js";
 import texts from "../../utils/fontStyle"
+import styles from './styles'
 import * as X from '../../utils/static'
+import { makeStyles } from "@material-ui/core/styles";
 
 const useTexts = makeStyles(texts);
+const useStyles = makeStyles(styles);
 
 export default function Section2() {
 
+  const [count, setCount] = useState(1);
+  const classes = useStyles();
+
   return (
-    <div >
+    <div>
       <Grid container justify="center">
         <Grid item xs={12} sm={12} md={9} >
-          <NavPills
-            alignCenter
-            color="primary"
-            tabs={[
-              {
-                tabButton: "Yearly Plan save 20%",
-                tabContent: (
-                  <Grid container justify="center" >
-                    {X.PRICING1.map((item, key) =>
-                      <Grid item xs={12} sm={12} md={4}>
-                        <Board item={item} />
-                      </Grid>)}
-                  </Grid>
-                )
-              }, {
-                tabButton: "Monthly Plan",
-                tabContent: (
-                  <Grid container justify="center" >
-                    {X.PRICING2.map((item, key) =>
-                      <Grid item xs={12} sm={12} md={4}>
-                        <Board item={item} />
-                      </Grid>)}
-                  </Grid>
-                )
-              },
-            ]}
-          />
+
+          <div className={classes.alignCenter}>
+            <div className={ count === 1 ? classes.primary: classes.default} onClick={() => setCount(1)}>
+              <div className={classes.end}>
+                Yearly Plan <span className={classes.small}> &nbsp;&nbsp;SAVE 20%</span>
+              </div>
+            </div>
+            <div className={ count === 2 ? classes.primary: classes.default} onClick={() => setCount(2)}>
+              Monthly Plan
+            </div>
+          </div>
+
+          { count === 1 && <TabPanel data={X.PRICING1} /> }
+          { count === 2 && <TabPanel data={X.PRICING2} /> }
+
         </Grid>
       </Grid>
 
     </div>
   );
 }
+
+function TabPanel(props) {
+  const { data } = props;
+  return (
+    <Grid container justify="center" >
+      {data.map((item, key) =>
+        <Grid item xs={12} sm={12} md={4} key={key}>
+          <Board item={item} />
+        </Grid>)}
+    </Grid>
+  )
+}
+
 
 function Board(props) {
 
