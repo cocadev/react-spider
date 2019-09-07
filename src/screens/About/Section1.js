@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from '@material-ui/core/Grid';
 import Button from "components/CustomButtons/Button.js";
 
-import styles from "../styles"
+import styles from "../../utils/styles";
 
 const useStyles = makeStyles(styles);
 

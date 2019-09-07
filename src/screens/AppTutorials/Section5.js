@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import styles from "../styles";
+import styles from "../../utils/styles";
 import classnames from 'classnames'
 import Button from "components/CustomButtons/Button.js";
 

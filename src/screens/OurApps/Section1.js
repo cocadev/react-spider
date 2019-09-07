@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from '@material-ui/core/Grid';
 import Button from "components/CustomButtons/Button.js";
 
-import styles from "../styles"
+import styles from "../../utils/styles";
 
 const useStyles = makeStyles(styles);
 
@@ -13,25 +13,25 @@ export default function Section1() {
     <div className={classes.background}>
       <div className={classes.section}>
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={6} md={7}>
+          <Grid item xs={12} sm={6} md={6}>
+            <h4 className={classes.content}>{'Integrated Management Systems For OHS'}</h4>
+            <h4 className={classes.title}>{'"We digitise paper work for searchable online documents."'}</h4>
+            <br /><br />
+
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={6}>
             <Grid
               container
-              direction="row"
+              direction="column"
               justify="center"
               alignItems="center"
             >
               <Button className={classes.myBtn}>
-                {'DOWNLOAD APP'} &nbsp;&nbsp;&nbsp;&nbsp;<i className="fab fa-google-play"></i>
-              </Button>
-              <Button className={classes.myBtn}>
-                {'DOWNLOAD APP'} &nbsp;&nbsp;&nbsp;&nbsp;<i className="fab fa-app-store"></i>
+                {'START A FREE TRIAL'}
+                &nbsp;&nbsp;&nbsp;&nbsp;<i className="fas fa-long-arrow-alt-right"></i>
               </Button>
             </Grid>
-          </Grid>
-          <Grid item xs={12} sm={6} md={5}>
-            <h4 className={classes.content}>{'Available on iOS & Android Systems'}</h4>
-            <h4 className={classes.title}>{'Start your first simple paper free checklist now!'}</h4>
-            <br /><br />
           </Grid>
         </Grid>
       </div>

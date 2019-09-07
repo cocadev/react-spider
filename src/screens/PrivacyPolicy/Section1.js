@@ -1,8 +1,8 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import texts from "../../utils/fontStyle"
-import styles from "../styles"
+import styles from "../../utils/styles"
 import classnames from 'classnames'
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(styles);
 const useTexts = makeStyles(texts);
@@ -22,7 +22,7 @@ export default function Section1() {
           <div>This website is owned and operated by <span className={texts.h007}>Desert Software Pty Ltd. </span> We are committed to protecting the privacy of our visitors while they interact with the content, products and services on this site known as “desertsoftware.com.au“.  This Privacy Policy applies to the Site and Applications only. It does not apply to other websites to which we link.  Because we gather certain types of information about our users, we want you to understand what information we collect about you, how we collect it, how that information is used, and how you can control our disclosure of it. You agree that your use of the Site signifies your assent to this Privacy Policy. If you do not agree with this Privacy Policy, please do not use the Site or Applications.</div><p></p>
           <div className={texts.h007}>1)  Information Collected</div><p></p>
           <div>We collect two types of information from you:
-                    <ol>
+            <ol>
               <li><div>i) Information that you voluntarily provide to us (e.g. through a voluntary registration process, sign-ups or emails);</div></li>
               <li><div>ii) information that is derived through automated tracking mechanisms.</div></li>
             </ol>

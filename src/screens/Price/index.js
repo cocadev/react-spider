@@ -1,21 +1,28 @@
 import React from "react";
 import classNames from "classnames";
-import { makeStyles } from "@material-ui/core/styles";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import HeaderLinks from "../Header/HeaderLinks.js";
-import styles from "../styles";
-
+import HeaderLinks from "../Header/HeaderLinks";
+import styles from "../../utils/styles";
+import Slide from "@material-ui/core/Slide";
 import Section1 from "./Section1";
-
+import Section2 from "./Section2";
 import Footer2 from "../Footer/index2";
+import { makeStyles } from "@material-ui/core/styles";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
 
-export default function PrivacyPolicy(props) {
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="down" ref={ref} {...props} />;
+});
+
+Transition.displayName = "Transition";
+
+export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
+
   return (
     <div>
       <Header
@@ -26,8 +33,10 @@ export default function PrivacyPolicy(props) {
         {...rest}
       />
       <div className={classNames(classes.main, classes.mainRaised)}>
-        
         <Section1 />
+        <div className={classes.container}>
+        </div>
+        <Section2 />
 
       </div>
       <Footer2 />

@@ -3,16 +3,16 @@ import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from '@material-ui/styles';
-import theme from './src/utils/responsive'
+import theme from './utils/responsive'
 import "assets/scss/material-kit-react.scss?v=1.8.0";
 
-import Home from "./src/view/Home";
-import AppTutorials from "./src/view/AppTutorials";
-import OurApps from "./src/view/OurApps";
-import Price from "./src/view/Price";
-import PrivacyPolicy from "./src/view/PrivacyPolicy";
-import AppUsagePolicy from "./src/view/AppUsagePolicy";
-import About from "./src/view/About";
+import Home from "./screens/Home";
+import AppTutorials from "./screens/AppTutorials";
+import OurApps from "./screens/OurApps";
+import Price from "./screens/Price";
+import PrivacyPolicy from "./screens/PrivacyPolicy";
+import AppUsagePolicy from "./screens/AppUsagePolicy";
+import About from "./screens/About";
 
 var hist = createBrowserHistory();
 
