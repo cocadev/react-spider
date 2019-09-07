@@ -1,13 +1,12 @@
 import React from "react";
 import classNames from "classnames";
 import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Footer from "../Footer";
 import HeaderLinks from "../Header/HeaderLinks";
 import styles from "../../utils/styles";
 import Slide from "@material-ui/core/Slide";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
-import Footer2 from "../Footer/index2";
 import { makeStyles } from "@material-ui/core/styles";
 
 const dashboardRoutes = [];
@@ -39,7 +38,6 @@ export default function LandingPage(props) {
         <Section2 />
 
       </div>
-      <Footer2 />
       <Footer />
     </div>
   );

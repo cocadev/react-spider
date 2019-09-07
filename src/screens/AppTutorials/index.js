@@ -1,10 +1,9 @@
 import React from "react";
 import classNames from "classnames";
 import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import HeaderLinks from "../Header/HeaderLinks.js";
 import styles from "../../utils/styles";
-import Footer2 from "../Footer/index2";
+import Footer from "../Footer";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Section1 from "./Section1";
@@ -35,7 +34,6 @@ export default function AppTutorials(props) {
         <Section5 />
 
       </div>
-      <Footer2 />
       <Footer />
     </div>
   );

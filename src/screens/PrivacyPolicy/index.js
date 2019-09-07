@@ -1,11 +1,10 @@
 import React from "react";
 import classNames from "classnames";
 import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import HeaderLinks from "../Header/HeaderLinks.js";
 import styles from "../../utils/styles";
 import Section1 from "./Section1";
-import Footer2 from "../Footer/index2";
+import Footer from "../Footer";
 import { makeStyles } from "@material-ui/core/styles";
 
 const dashboardRoutes = [];
@@ -30,7 +29,6 @@ export default function PrivacyPolicy(props) {
         <Section1 />
 
       </div>
-      <Footer2 />
       <Footer />
     </div>
   );
