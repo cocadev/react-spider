@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinks from "../Header/HeaderLinks.js";
 import styles from "./styles";
 
 import Dialog from "@material-ui/core/Dialog";

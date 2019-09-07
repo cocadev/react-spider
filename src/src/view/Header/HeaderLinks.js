@@ -17,10 +17,18 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
 
-      <MenuComponent icon={<i className="fas fa-home size18"></i>} title={'Home'} />
-      <MenuComponent icon={<i className="fas fa-th size18"></i>} title={'OHS Apps'} />
-      <MenuComponent icon={<i className="fas fa-lightbulb size18"></i>} title={'App Tutorials'} />
-      <MenuComponent icon={<i className="fas fa-dollar-sign size18"></i>} title={'Pricing'} />
+      <Link to='/'>
+        <MenuComponent icon={<i className="fas fa-home"></i>} title={'Home'} />
+      </Link>
+      <Link to='/apps'>
+        <MenuComponent icon={<i className="fas fa-th"></i>} title={'OHS Apps'} />
+      </Link>
+      <Link to='/tutorial'>
+        <MenuComponent icon={<i className="fas fa-lightbulb"></i>} title={'App Tutorials'} />
+      </Link>
+      <Link to='/price'>
+        <MenuComponent icon={<i className="fas fa-dollar-sign"></i>} title={'Pricing'} />
+      </Link>
 
       <ListItem className={classes.listItem}>
         <CustomDropdown
@@ -31,17 +39,19 @@ export default function HeaderLinks(props) {
             color: "transparent"
           }}
           dropdownList={[
-            <Link to="/PrivacyPolicy" className={classes.dropdownLink}>
+            <Link to="/privacy" className={classes.dropdownLink}>
               <i className="fas fa-user-lock"></i> Privacy Policy
             </Link>,
-            <Link to="/AppUsagePolicy" className={classes.dropdownLink}>
+            <Link to="/usage" className={classes.dropdownLink}>
               <i className="fas fa-list-alt"></i> App Term of Use
             </Link>
           ]}
         />
       </ListItem>
 
-      <MenuComponent icon={<i className="fas fa-users size16 mr-2"></i>} title={'About Us'} />
+      <Link to="/about" >
+        <MenuComponent icon={<i className="fas fa-users size16 mr-2"></i>} title={'About Us'} />
+      </Link>
     </List>
   );
 }

@@ -6,11 +6,9 @@ import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import Button from "components/CustomButtons/Button.js";
-import styles from "../styles";
 import texts from "../../utils/fontStyle"
 import * as X from '../../utils/static'
 
-const useStyles = makeStyles(styles);
 const useTexts = makeStyles(texts);
 
 export default function Section2() {

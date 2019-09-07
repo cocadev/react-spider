@@ -16,6 +16,7 @@ import OurApps from "./src/view/OurApps";
 import Price from "./src/view/Price";
 import PrivacyPolicy from "./src/view/PrivacyPolicy";
 import AppUsagePolicy from "./src/view/AppUsagePolicy";
+import About from "./src/view/About";
 
 var hist = createBrowserHistory();
 
@@ -25,11 +26,12 @@ ReactDOM.render(
       <Switch>
         <Route path="/guide" component={Components} />
         <Route path="/profile-page" component={ProfilePage} />
-        <Route path="/ourApps" component={OurApps} />
+        <Route path="/apps" component={OurApps} />
         <Route path="/price" component={Price} />
-        <Route path="/AppTutorials" component={AppTutorials} />
-        <Route path="/PrivacyPolicy" component={PrivacyPolicy} />
-        <Route path="/AppUsagePolicy" component={AppUsagePolicy} />
+        <Route path="/tutorial" component={AppTutorials} />
+        <Route path="/privacy" component={PrivacyPolicy} />
+        <Route path="/usage" component={AppUsagePolicy} />
+        <Route path="/about" component={About} />
         <Route path="/" component={Home} />
       </Switch>
     </ThemeProvider>

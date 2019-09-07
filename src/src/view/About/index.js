@@ -7,13 +7,15 @@ import HeaderLinks from "../Header/HeaderLinks.js";
 import styles from "../styles";
 
 import Section1 from "./Section1";
+import Section2 from "./Section2";
+import Section5 from "./Section5";
 
 import Footer2 from "../Footer/index2";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
 
-export default function PrivacyPolicy(props) {
+export default function About(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
@@ -28,6 +30,10 @@ export default function PrivacyPolicy(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         
         <Section1 />
+        <div className={classes.container}>
+          <Section2 />
+        </div>
+        <Section5 />
 
       </div>
       <Footer2 />

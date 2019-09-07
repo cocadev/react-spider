@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinks from "../Header/HeaderLinks.js";
 import styles from "../styles";
 
 import Section1 from "./Section1";
