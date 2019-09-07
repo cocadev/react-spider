@@ -1,13 +1,12 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
+import Grid from '@material-ui/core/Grid';
 import styles from "./styles";
 import Carousel from "react-slick";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import classnames from 'classnames'
 import { DATA1, DATA2 } from './data';
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(styles);
 
@@ -23,8 +22,8 @@ export default function Section2() {
   };
   return (
     <div className={classes.section}>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={12}>
+        <Grid container>
+          <Grid item xs={12} sm={12} md={12}>
             <div className={classes.body}>
               <h5 className={classes.title}>WHAT WE RECOMMEND</h5>
               <h1 className={classes.content}>Our Top Rated Products</h1>
@@ -57,9 +56,8 @@ export default function Section2() {
                 </center>
               </Carousel>
             </div>
-          </GridItem>
-
-        </GridContainer>
+          </Grid>
+        </Grid>
       </div>
   );
 }

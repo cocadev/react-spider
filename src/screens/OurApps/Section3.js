@@ -1,12 +1,15 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import Grid from '@material-ui/core/Grid';
 import styles from "../../utils/styles";
 import classnames from 'classnames'
+import { makeStyles } from "@material-ui/core/styles";
+
 const useStyles = makeStyles(styles);
 
 export default function Section3() {
+
   const classes = useStyles();
+  
   return (
     <div className={classes.back}>
       <div className={classes.section}>

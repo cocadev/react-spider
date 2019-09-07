@@ -1,12 +1,11 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
+import Grid from '@material-ui/core/Grid';
 import styles from "./styles";
 import Button from "components/CustomButtons/Button.js";
 import Carousel from "react-slick";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(styles);
 
@@ -23,8 +22,8 @@ export default function Section2() {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
+        <Grid container>
+          <Grid xs={12} sm={12} md={4}>
             <h5 className={classes.title}>TESTIMONIALS</h5>
             <h1 className={classes.content}>What People Say About Us</h1>
             <h3 className={classes.quote}>We always listen to our customers</h3>
@@ -32,8 +31,8 @@ export default function Section2() {
               {'GET IN TOUCH'}
               &nbsp;&nbsp;&nbsp;&nbsp;<i className="fas fa-long-arrow-alt-right"></i>
             </Button>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={8}>
+          </Grid>
+          <Grid item xs={12} sm={12} md={8}>
             <center className={classes.body}>
               <Carousel {...settings}>
                 <div>
@@ -46,8 +45,8 @@ export default function Section2() {
                 </div>
               </Carousel>
             </center>
-          </GridItem>
-        </GridContainer>
+          </Grid>
+        </Grid>
       </div>
     </div>
   );

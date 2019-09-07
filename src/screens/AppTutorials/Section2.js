@@ -1,9 +1,8 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
+import Grid from '@material-ui/core/Grid';
 import styles from "../../utils/styles";
 import Button from "components/CustomButtons/Button.js";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(styles);
 
@@ -12,8 +11,8 @@ export default function Section2() {
   return (
     <div>
       <div className={classes.section}>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={6}>
+        <Grid container>
+          <Grid item xs={12} sm={12} md={6}>
             <div className={classes.body}>
               <h5 className={classes.h5}>EASY TO USE</h5>
               <h1 className={classes.h2}>Start Your First Paperless Checklist</h1>
@@ -22,13 +21,12 @@ export default function Section2() {
               {'download free trial'}
               &nbsp;&nbsp;&nbsp;&nbsp;<i className="fas fa-arrow-alt-circle-down"></i>
             </Button>
-            
             </div>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={6}>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6}>
             <img className={classes.img} src={require("assets/img/marketing-image-4.png")} alt={'{frontend image}'} />
-          </GridItem>
-        </GridContainer>
+          </Grid>
+        </Grid>
       </div>
     </div>
   );

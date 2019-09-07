@@ -1,9 +1,8 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
+import Grid from '@material-ui/core/Grid';
 import styles from "../../utils/styles";
 import texts from "../../utils/fontStyle"
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(styles);
 const useTexts = makeStyles(texts);
@@ -16,8 +15,8 @@ export default function Section1() {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={12}>
+        <Grid container justify="center">
+          <Grid item xs={12} sm={12} md={12}>
             <center>
               <div className={texts.h201}>SELECT YOUR PLAN</div>
               <span className={texts.h001}>No Hidden Charges<br/> Simple & Transparent Pricing</span>
@@ -26,8 +25,8 @@ export default function Section1() {
                 <span className={texts.h003}> unlimited free trial. No obligation, no credit card required.</span>
               </div>
             </center>
-          </GridItem>
-        </GridContainer>
+          </Grid>
+        </Grid>
       </div>
     </div>
   );

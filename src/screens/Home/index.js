@@ -1,10 +1,8 @@
 import React from "react";
 import classNames from "classnames";
-import { makeStyles } from "@material-ui/core/styles";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
+import Grid from '@material-ui/core/Grid';
 import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "../Header/HeaderLinks.js";
 import styles from "./styles";
@@ -28,6 +26,7 @@ import Section4 from "./Section4/index";
 import Section5 from "./Section5/index";
 import Section6 from "./Section6/index";
 import Footer2 from "../Footer/index2";
+import { makeStyles } from "@material-ui/core/styles";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -114,8 +113,8 @@ export default function LandingPage(props) {
             <p className={classes.divider}>Leave us a message and we will contact you quickly.</p>
             <CardBody>
 
-              <GridContainer justify="center">
-                <GridItem xs={12} sm={6} md={4}>
+              <Grid container justify="center">
+                <Grid item xs={12} sm={6} md={4}>
                   <CustomInput
                     labelText="Your Name"
                     id="name"
@@ -123,8 +122,8 @@ export default function LandingPage(props) {
                       fullWidth: true
                     }}
                   />
-                </GridItem>
-                <GridItem xs={12} sm={6} md={4}>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
                   <CustomInput
                     labelText="Your Email"
                     id="email"
@@ -132,8 +131,8 @@ export default function LandingPage(props) {
                       fullWidth: true
                     }}
                   />
-                </GridItem>
-                <GridItem xs={12} sm={6} md={4}>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
                   <CustomInput
                     labelText="Subject"
                     id="subject"
@@ -141,8 +140,8 @@ export default function LandingPage(props) {
                       fullWidth: true
                     }}
                   />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={12}>
+                </Grid>
+                <Grid item xs={12} sm={12} md={12}>
                   <CustomInput
                     labelText="Message"
                     textarea={true}
@@ -151,8 +150,8 @@ export default function LandingPage(props) {
                       fullWidth: true
                     }}
                   />
-                </GridItem>
-              </GridContainer>
+                </Grid>
+              </Grid>
             </CardBody>
             <CardFooter className={classes.cardFooter}>
               <Button color="primary">

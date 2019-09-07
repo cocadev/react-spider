@@ -1,8 +1,8 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import texts from "../../utils/fontStyle"
 import styles from "../../utils/styles";
 import classnames from 'classnames'
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(styles);
 const useTexts = makeStyles(texts);

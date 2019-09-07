@@ -1,6 +1,6 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import styles from "./styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(styles);
 const DATA = [

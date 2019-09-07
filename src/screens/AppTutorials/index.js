@@ -1,16 +1,15 @@
 import React from "react";
 import classNames from "classnames";
-import { makeStyles } from "@material-ui/core/styles";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import HeaderLinks from "../Header/HeaderLinks.js";
 import styles from "../../utils/styles";
+import Footer2 from "../Footer/index2";
+import { makeStyles } from "@material-ui/core/styles";
 
 import Section1 from "./Section1";
 import Section2 from "./Section2";
 import Section5 from "./Section5";
-
-import Footer2 from "../Footer/index2";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
