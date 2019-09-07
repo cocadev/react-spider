@@ -148,8 +148,9 @@ const headerStyle = {
     ...transition
   },
   logo: {
-    width: 250,
-    height: 50,
+
+    maxWidth: "100%",
+    height: "auto",
     '@media (max-width:360px)': {
       width: 180,
       height: 35,

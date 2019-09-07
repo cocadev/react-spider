@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom'
 import classNames from "classnames";
-import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -10,7 +8,9 @@ import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 import styles from "./headerStyle";
-import logo from "assets/img/logo.png"
+import logo from 'assets/img/logo.png';
+import { makeStyles } from "@material-ui/core/styles";
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(styles);
 
