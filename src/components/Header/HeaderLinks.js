@@ -25,8 +25,13 @@ export default function HeaderLinks(props) {
         <MenuComponent icon={<i className="fas fa-th size18"></i>} title={'OHS Apps'} />
       </Link>
 
-      <MenuComponent icon={<i className="fas fa-lightbulb size18"></i>} title={'App Tutorials'} />
-      <MenuComponent icon={<i className="fas fa-dollar-sign size18"></i>} title={'Pricing'} />
+      <Link to="/AppTutorials">
+        <MenuComponent icon={<i className="fas fa-lightbulb size18"></i>} title={'App Tutorials'} />
+      </Link>
+
+      <Link to="/price">
+        <MenuComponent icon={<i className="fas fa-dollar-sign size18"></i>} title={'Pricing'} />
+      </Link>
 
       <ListItem className={classes.listItem}>
         <CustomDropdown

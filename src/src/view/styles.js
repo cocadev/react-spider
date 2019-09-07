@@ -3,6 +3,8 @@ import imageOurApps from "assets/img/widescreen-1.jpg"
 import imageCard1 from "assets/img/card-bg-1.jpg"
 import imageCard2 from "assets/img/card-bg-2.jpg"
 import imageCard3 from "assets/img/card-bg-3.jpg"
+// import imageCard4 from "assets/img/card-bg-4.jpg"
+
 import OurApp from 'assets/img/feature-bg-2.jpg'
 
 export default {
@@ -15,7 +17,8 @@ export default {
     main: {
         background: "#FFFFFF",
         position: "relative",
-        zIndex: "3"
+        zIndex: "3",
+        paddingTop: "59px"
     },
     mainRaised: {
         margin: "-60px 30px 0px",
@@ -70,6 +73,22 @@ export default {
         },
     },
 
+    fluid: {
+        marginTop: 147,
+        ...container,
+        width: "100%",
+        "@media (min-width: 1200px)": {
+            maxWidth: "1270px",
+        },
+        '@media (max-width:426px)': {
+            height: 280,
+            marginTop: 71,
+        },
+    },
+
+    //////////////////////////// content ////////////
+
+
     //////////////////////////// Letter Typhography ////////////////////////
     content: {
         fontSize: 55,
@@ -91,10 +110,7 @@ export default {
             fontSize: 16,
         },
     },
-    h5: {
-        color: "#9c27B0 !important",
-        fontWeight: 500
-    },
+    
     h2: {
         fontSize: "2.8125rem",
         color: '#343434',
@@ -109,9 +125,18 @@ export default {
         fontSize: 20,
         fontWeight: 500
     },
+    h5: {
+        color: "#9c27B0 !important",
+        fontWeight: 500
+    },
     h6: {
         fontSize: 16,
         color: '#434343',
+    },
+    h7: {
+        fontSize: 36,
+        color: '#434343',
+        fontWeight: '500'
     },
 
     myBtn: {
@@ -202,5 +227,9 @@ export default {
             marginLeft: "2px",
             marginRight: "2px",
         },
-    }
+    },
+    navWrapper: {
+        margin: "20px auto 50px auto",
+        textAlign: "center"
+      }
 };

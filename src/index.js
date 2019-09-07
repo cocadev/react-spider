@@ -10,8 +10,12 @@ import "assets/scss/material-kit-react.scss?v=1.8.0";
 import Components from "views/Components/Components.js";
 import ProfilePage from "views/ProfilePage/ProfilePage.js";
 
-import Home from "src/view/Home";
-import OurApps from "src/view/OurApps";
+import Home from "./src/view/Home";
+import AppTutorials from "./src/view/AppTutorials";
+import OurApps from "./src/view/OurApps";
+import Price from "./src/view/Price";
+import PrivacyPolicy from "./src/view/PrivacyPolicy";
+import AppUsagePolicy from "./src/view/AppUsagePolicy";
 
 var hist = createBrowserHistory();
 
@@ -22,6 +26,10 @@ ReactDOM.render(
         <Route path="/guide" component={Components} />
         <Route path="/profile-page" component={ProfilePage} />
         <Route path="/ourApps" component={OurApps} />
+        <Route path="/price" component={Price} />
+        <Route path="/AppTutorials" component={AppTutorials} />
+        <Route path="/PrivacyPolicy" component={PrivacyPolicy} />
+        <Route path="/AppUsagePolicy" component={AppUsagePolicy} />
         <Route path="/" component={Home} />
       </Switch>
     </ThemeProvider>

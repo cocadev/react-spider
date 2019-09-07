@@ -31,10 +31,10 @@ export default function HeaderLinks(props) {
             color: "transparent"
           }}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/PrivacyPolicy" className={classes.dropdownLink}>
               <i className="fas fa-user-lock"></i> Privacy Policy
             </Link>,
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/AppUsagePolicy" className={classes.dropdownLink}>
               <i className="fas fa-list-alt"></i> App Term of Use
             </Link>
           ]}
