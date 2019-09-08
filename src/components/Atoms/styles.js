@@ -4,7 +4,13 @@ import imageCard3 from "assets/img/card-bg-3.jpg"
 
 export default {
     body: {
-        marginLeft: "5em"
+        marginLeft: "5em",
+        '@media (max-width:900px)': {
+            marginLeft: "1em",
+        },
+        '@media (max-width:426px)': {
+            marginLeft: "0.5em",
+        },
     },
     section: {
         padding: "70px",
@@ -81,5 +87,55 @@ export default {
         justifyContent: 'center',
         alignItems: 'center',
         backgroundImage: "url(" + imageCard3 + ")",
-    }
+    },
+    img: {
+        width: '100%'
+    },
+    
+ 
+    h3: {
+        color: "#6c757d !important",
+        fontSize: "1.6125rem",
+        '@media (max-width:900px)': {
+            fontSize: "1.3125rem",
+        },
+        '@media (max-width:426px)': {
+            fontSize: "1.1125rem",
+        },
+    },
+    h5: {
+        color: "#9c27B0 !important",
+        fontWeight: 500
+    },
+    h6: {
+        fontSize: "2.8125rem",
+        color: '#343434',
+        fontWeight: 500,
+        lineHeight: 1.2,
+        '@media (max-width:900px)': {
+            fontSize: "1.8125rem",
+        },
+        '@media (max-width:426px)': {
+            fontSize: "1.2125rem",
+        },
+    },
+    pink: {
+        color: "#9c27B0 !important",
+    },
+    h4: {
+        marginTop: "1.2em",
+        color: "#434343 !important",
+        fontSize: 20,
+        fontWeight: 500
+    },
+    h7: {
+        fontSize: 16,
+        color: '#434343',
+    },
+    ml: {
+        margin: "0.7em 0 0 2.7em",
+        '@media (max-width:426px)': {
+            marginLeft: "0",
+        },
+    },
 };

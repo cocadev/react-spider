@@ -7,11 +7,11 @@ import styles from "../../utils/styles";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Section1 from "./Section1";
-import Section2 from "./Section2";
 import Section3 from "./Section3";
 import Section4 from "./Section4";
 import FreeTrialCard from "../../components/Atoms/FreeTrialCard";
 import Section5 from "./Section5";
+import ProvideDashboard from "components/Atoms/ProvideDashboard";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -32,7 +32,16 @@ export default function OurApps(props) {
         
         <Section1 />
         <div className={classes.container}>
-          <Section2 />
+          <ProvideDashboard 
+            image={require("assets/img/marketing-image-4.png")}
+            title={'WHAT WE PROVIDE'}
+            description={'Integrated Dashboard Management Systems'}
+            content={'With integrated dashboard you can keep documents safe and secure. All reports are date sensitive with easier access.'}
+            details={[
+              { title: 'Personalised Design', content: 'Do the way your company desires with the chosen apps and customized forms.'},
+              { title: 'Personalised Design', content: 'Do the way your company desires with the chosen apps and customized forms.'}
+            ]}
+          />
         </div>
         <Section3 />
         <Section4 />

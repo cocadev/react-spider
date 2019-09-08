@@ -13,6 +13,7 @@ import Section5 from "./Section5/index";
 import Section6 from "./Section6/index";
 import Footer from "../Footer/index";
 import { makeStyles } from "@material-ui/core/styles";
+import ProvideDashboard from "components/Atoms/ProvideDashboard";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -42,7 +43,18 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <Section1 />
         </div>
-        <Section2 />
+        {/* <Section2 /> */}
+        <ProvideDashboard 
+            image={require("assets/img/front-img.png")}
+            title={'WHAT WE DO'}
+            description={'Product Development for Better Business'}
+            content={'Desert Software is for all types of business, creating innovative products that empower our customers to grow.'}
+            details={[
+              { title: 'OHS Management Systems', content: 'We develop Apps with dashboards to help customers complete OHS audit.'},
+              { title: 'IT Services & Consultancy', content: 'We use the latest technologies to design the products the customers need.'},
+              { title: 'NDIS Audit Systems', content: 'We provide modern software development practices for NDIS providers without outdated paper systems.'}
+            ]}
+          />
         <div className={classes.container}>
           <Section3 />
         </div>
