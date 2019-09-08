@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import Header from "../Header/Header";
 import HeaderLinks from "../Header/HeaderLinks.js";
-import styles from "../../utils/styles";
+import styles from "./styles";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Section1 from "./Section1";
@@ -10,6 +10,7 @@ import Section2 from "./Section2";
 import Section5 from "./Section5";
 
 import Footer from "../Footer/index";
+import BackgroundHeader from "../../components/Atoms/BackgroundHeader";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -27,8 +28,8 @@ export default function About(props) {
         {...rest}
       />
       <div className={classNames(classes.main, classes.mainRaised)}>
-        
-        <Section1 />
+
+        <BackgroundHeader />
         <div className={classes.container}>
           <Section2 />
         </div>

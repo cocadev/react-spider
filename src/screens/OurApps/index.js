@@ -10,6 +10,7 @@ import Section1 from "./Section1";
 import Section2 from "./Section2";
 import Section3 from "./Section3";
 import Section4 from "./Section4";
+import FreeTrialCard from "../../components/Atoms/FreeTrialCard";
 import Section5 from "./Section5";
 
 const dashboardRoutes = [];
@@ -36,6 +37,11 @@ export default function OurApps(props) {
         <Section3 />
         <Section4 />
         <Section5 />
+        <FreeTrialCard 
+          title={'Start 14 Days Free Trial'}
+          description={'Try fully functioning OHS management systems today with no risk and no obligation!'}
+          btn={'get started now'}
+        />
 
       </div>
       <Footer />

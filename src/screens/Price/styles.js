@@ -8,7 +8,9 @@ const defaultFont = {
 };
 
 const navPillsStyle = theme => ({
-  
+  container: {
+    marginTop: "130px"
+  },
   flexContainer: {
     [theme.breakpoints.down("xs")]: {
       display: "flex",
@@ -65,12 +67,15 @@ const navPillsStyle = theme => ({
     display: 'flex',
     flexDirection: 'row',
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    marginBottom: "50px"
   },
-  redy: {
-    color: 'red'
+  margin: {
+    margin: "32px 0 12px"
+  },
+  top: {
+      marginTop: "25px"
   }
-
 });
 
 export default navPillsStyle;

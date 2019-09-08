@@ -33,10 +33,7 @@ export default function LandingPage(props) {
       />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <Section1 />
-        <div className={classes.container}>
-        </div>
         <Section2 />
-
       </div>
       <Footer />
     </div>

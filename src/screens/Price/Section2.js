@@ -44,7 +44,9 @@ export default function Section2() {
 }
 
 function TabPanel(props) {
+
   const { data } = props;
+
   return (
     <Grid container justify="center" >
       {data.map((item, key) =>
@@ -54,7 +56,6 @@ function TabPanel(props) {
     </Grid>
   )
 }
-
 
 function Board(props) {
 
