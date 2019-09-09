@@ -107,7 +107,7 @@ export default function Footer() {
                         <p className={classes.divider}>Leave us a message and we will contact you quickly.</p>
                         <CardBody>
 
-                            <Grid container justify="center">
+                            <Grid container justify="center" spacing={3}>
                                 <Grid item xs={12} sm={6} md={4}>
                                     <CustomInput
                                         labelText="Your Name"
@@ -148,7 +148,7 @@ export default function Footer() {
                             </Grid>
                         </CardBody>
                         <CardFooter className={classes.cardFooter}>
-                            <Button color="primary">
+                            <Button color="pink" size='lg'>
                                 Send Message
                             </Button>
                         </CardFooter>

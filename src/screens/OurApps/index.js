@@ -6,12 +6,12 @@ import HeaderLinks from "../Header/HeaderLinks.js";
 import styles from "../../utils/styles";
 import { makeStyles } from "@material-ui/core/styles";
 
-import Section1 from "./Section1";
+// import Section1 from "./Section1";
 import Section3 from "./Section3";
 import Section4 from "./Section4";
 import FreeTrialCard from "../../components/Atoms/FreeTrialCard";
-import Section5 from "./Section5";
 import ProvideDashboard from "components/Atoms/ProvideDashboard";
+import BackgroundHeader from "components/Atoms/BackgroundHeader";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -30,7 +30,14 @@ export default function OurApps(props) {
       />
       <div className={classNames(classes.main, classes.mainRaised)}>
         
-        <Section1 />
+        {/* <Section1 /> */}
+        <BackgroundHeader
+          content1={'Integrated Management'}
+          content2={'Systems For OHS'}
+          background={'apps'}
+          title={'"We digitise paper work for searchable online documents."'}
+        />
+
         <div className={classes.container}>
           <ProvideDashboard 
             image={require("assets/img/marketing-image-4.png")}
@@ -45,7 +52,7 @@ export default function OurApps(props) {
         </div>
         <Section3 />
         <Section4 />
-        <Section5 />
+        {/* <Section5 /> */}
         <FreeTrialCard 
           title={'Start 14 Days Free Trial'}
           description={'Try fully functioning OHS management systems today with no risk and no obligation!'}

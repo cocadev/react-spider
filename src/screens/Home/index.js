@@ -6,7 +6,6 @@ import styles from "./styles";
 import Slide from "@material-ui/core/Slide";
 import Carousel from "./Carousel/index";
 import Section1 from "./Section1/index";
-import Section2 from "./Section2/index";
 import Section3 from "./Section3/index";
 import Section4 from "./Section4/index";
 import Section5 from "./Section5/index";

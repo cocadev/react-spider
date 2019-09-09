@@ -6,9 +6,9 @@ import styles from "../../utils/styles";
 import Footer from "../Footer";
 import { makeStyles } from "@material-ui/core/styles";
 
-import Section1 from "./Section1";
-import Section2 from "./Section2";
 import FreeTrialCard from "components/Atoms/FreeTrialCard";
+import ProvideDashboard from "../../components/Atoms/ProvideDashboard";
+import BackgroundHeader from "components/Atoms/BackgroundHeader";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -26,13 +26,29 @@ export default function AppTutorials(props) {
         {...rest}
       />
       <div className={classNames(classes.main, classes.mainRaised)}>
-        
-        <Section1 />
+
+        {/* <Section1 /> */}
+        <BackgroundHeader 
+          content1={'Available on iOS &'}
+          content2={'Android Systems'}
+          title={'Start your first simple paper free checklist now!'}
+          btn={true}
+          background={'tutorial'}
+        />
+
         <div className={classes.container}>
-          <Section2 />
+          <ProvideDashboard
+            image={require("assets/img/marketing-image-4.png")}
+            title={'EASY TO USE'}
+            description={'Start Your First Paperless Checklist'}
+            content={'All Apps have date, time and GPS location stamp. Most Apps have photo-attached and electronic signature features.'}
+            details={[]}
+            btn={'download free trial'}
+            reverse={true}
+          />
         </div>
 
-        <FreeTrialCard 
+        <FreeTrialCard
           title={'Have Troubles When Using?'}
           description={'Feel free to contact us if you encounter issues for downloading or installing the Apps!'}
           btn={'contact us now'}
