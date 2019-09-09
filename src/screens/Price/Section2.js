@@ -60,10 +60,12 @@ function TabPanel(props) {
 function Board(props) {
 
   const texts = useTexts();
+  // const classes = useStyles();
+
   const { color, btn, title, price, description } = props.item;
 
   return (
-    <Card>
+    <Card className={texts.myCard}>
       <CardHeader color={color}>{title}</CardHeader>
       <CardBody>
         <h4 className={texts.h004}>

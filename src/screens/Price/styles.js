@@ -75,6 +75,15 @@ const navPillsStyle = theme => ({
   },
   top: {
       marginTop: "25px"
+  },
+  myCard: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  hr: {
+    height: "1px",
+    backgroundColor: 'red'
   }
 });
 
