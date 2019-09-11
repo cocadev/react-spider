@@ -17,8 +17,15 @@ import NoMatch from "./screens/NoMatch"
 
 var hist = createBrowserHistory();
 
+const browserHistory = createBrowserHistory();
+
+browserHistory.listen((location, action) => {
+  window.scrollTo(0, 0);
+});
+
+
 ReactDOM.render(
-  <Router history={hist}>
+  <Router history={hist} history={browserHistory}>
     <ThemeProvider theme={theme}>
       <Switch>
         <Route path="/apps" component={OurApps} />
@@ -29,10 +36,9 @@ ReactDOM.render(
         <Route path="/about" component={About} />
         <Route exact path="/" component={Home} />
         <Route component={NoMatch} />
-
       </Switch>
     </ThemeProvider>
-
   </Router>,
   document.getElementById("root")
 );
+

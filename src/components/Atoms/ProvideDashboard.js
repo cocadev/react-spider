@@ -28,6 +28,7 @@ export default function ProvideDashboard(props) {
               {
                 props.details.map((item, index) => (
                   <Item
+                    key={index}
                     title={item.title}
                     content={item.content}
                   />
