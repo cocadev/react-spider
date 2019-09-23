@@ -187,6 +187,9 @@ export default {
     img: {
         width: '100%'
     },
+    img_2: {
+        width: '80%'
+    },
     pink: {
         color: "#9c27B0 !important",
     },

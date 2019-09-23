@@ -31,7 +31,7 @@ export default function Section1() {
                     <p className={classes.divider}>Drop a Message</p>
                     <CardBody>
 
-                      <Grid container justify="center">
+                      <Grid container justify="center" spacing={3}>
                         <Grid item xs={12} sm={6} md={4}>
                           <CustomInput
                             labelText="Your Name"

@@ -5,8 +5,8 @@ import Carousel from "react-slick";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import classnames from 'classnames'
-import { DATA1, DATA2 } from '../Home/Section3/data';
 import { makeStyles } from "@material-ui/core/styles";
+import { OurApps } from "utils/static";
 
 const useStyles = makeStyles(styles);
 
@@ -16,48 +16,36 @@ export default function Section4() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     autoplay: false
   };
   return (
     <div className={classes.section}>
-        <Grid Container>
-          <Grid item xs={12} sm={12} md={12}>
-            <div className={classes.body}>
-              <h5 className={classes.title}>WHAT YOU NEED</h5>
-              <h1 className={classes.content}>Our Top Rated Products</h1>
+      <Grid Container>
+        <Grid item xs={12} sm={12} md={12}>
+          <div className={classes.body}>
 
-              <Carousel {...settings}>
-                <center className={classes.view}>
-                  {DATA1.map((item, key) => (
-                    <CardItem
-                      key={key}
-                      img={item.img}
-                      tag1={item.tag1}
-                      tag2={item.tag2}
-                      title={item.title}
-                      description={item.description}
-                    />
-                  ))}
-                </center>
-                <center className={classes.view}>
-                  {DATA2.map((item, key) => (
-                    <CardItem
-                      key={key}
-                      img={item.img}
-                      tag1={item.tag1}
-                      tag2={item.tag2}
-                      title={item.title}
-                      description={item.description}
-                    />
-                  ))}
-                </center>
-              </Carousel>
-            </div>
-          </Grid>
+            <h5 className={classes.title}>WHAT YOU NEED</h5>
+            <h1 className={classes.content}>Our Top Rated Products</h1>
+
+            <Carousel {...settings}>
+              {OurApps.map((item, key) => (
+                <CardItem
+                  key={key}
+                  img={item.img}
+                  tag1={item.tag1}
+                  tag2={item.tag2}
+                  title={item.title}
+                  description={item.description}
+                />
+              ))}
+            </Carousel>
+
+          </div>
         </Grid>
-      </div>
+      </Grid>
+    </div>
   );
 }
 

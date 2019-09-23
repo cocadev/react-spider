@@ -7,8 +7,9 @@ import Footer from "../Footer";
 import { makeStyles } from "@material-ui/core/styles";
 
 import FreeTrialCard from "components/Atoms/FreeTrialCard";
-import ProvideDashboard from "../../components/Atoms/ProvideDashboard";
 import BackgroundHeader from "components/Atoms/BackgroundHeader";
+import ProvideCarousel from "components/Atoms/ProvideCarousel";
+import { TutorialImages } from "utils/static";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -37,7 +38,7 @@ export default function AppTutorials(props) {
         />
 
         <div className={classes.container}>
-          <ProvideDashboard
+          <ProvideCarousel
             image={require("assets/img/marketing-image-4.png")}
             title={'EASY TO USE'}
             description={'Start Your First Paperless Checklist'}
@@ -45,6 +46,7 @@ export default function AppTutorials(props) {
             details={[]}
             btn={'download free trial'}
             reverse={true}
+            phones={TutorialImages}
           />
         </div>
 

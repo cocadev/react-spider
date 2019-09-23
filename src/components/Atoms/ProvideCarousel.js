@@ -3,13 +3,22 @@ import Grid from '@material-ui/core/Grid';
 import styles from "./styles";
 import classnames from 'classnames'
 import Button from "components/CustomButtons/Button.js";
+import Carousel from "react-slick";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(styles);
 
-export default function ProvideDashboard(props) {
+export default function ProvideCarousel(props) {
 
   const classes = useStyles();
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false
+  };
 
   return (
     <div>
@@ -17,17 +26,27 @@ export default function ProvideDashboard(props) {
         <Grid
           container
           direction={props.reverse && "row-reverse"}
+          alignItems='center' 
         >
-          <Grid item xs={12} sm={12} md={6}>
-            <img className={classes.img} src={props.image} alt={'{frontend image}'} />
+          <Grid item xs={12} sm={12} md={5}>
+            <Carousel {...settings}>
+              {
+               props.phones && props.phones.map((item, index)=>
+               <center key={index} >
+                 <img className={classes.img_2} src={require("assets/img/tur/" + item)} alt={'{frontend image}'} />
+               </center>)
+              }
+            </Carousel>
           </Grid>
-          
-          <Grid item xs={12} sm={12} md={6}>
+
+          <Grid item xs={12} sm={12} md={7} >
             <div className={classes.body}>
+
               <h5 className={classes.h5}>{props.title}</h5>
               <h1 className={classes.h6}>{props.description}</h1>
               <h3 className={classes.h3}>{props.content}</h3>
               <div className={classes.dark}>{props.explain}</div>
+
               {
                 props.details.map((item, index) => (
                   <Item
@@ -37,6 +56,7 @@ export default function ProvideDashboard(props) {
                   />
                 ))
               }
+
               <div className={classes.mt}>
                 {
                   props.btn &&
@@ -48,6 +68,7 @@ export default function ProvideDashboard(props) {
 
             </div>
           </Grid>
+
         </Grid>
       </div>
     </div>

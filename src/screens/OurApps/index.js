@@ -4,14 +4,14 @@ import Header from "../Header/Header";
 import Footer from "../Footer";
 import HeaderLinks from "../Header/HeaderLinks.js";
 import styles from "../../utils/styles";
-import { makeStyles } from "@material-ui/core/styles";
-
-// import Section1 from "./Section1";
 import Section3 from "./Section3";
 import Section4 from "./Section4";
 import FreeTrialCard from "../../components/Atoms/FreeTrialCard";
 import ProvideDashboard from "components/Atoms/ProvideDashboard";
 import BackgroundHeader from "components/Atoms/BackgroundHeader";
+import { OurAppsPhoneImages } from "utils/static";
+import { makeStyles } from "@material-ui/core/styles";
+import ProvideCarousel from "components/Atoms/ProvideCarousel";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -30,7 +30,6 @@ export default function OurApps(props) {
       />
       <div className={classNames(classes.main, classes.mainRaised)}>
         
-        {/* <Section1 /> */}
         <BackgroundHeader
           content1={'Integrated Management'}
           content2={'Systems For OHS'}
@@ -50,9 +49,23 @@ export default function OurApps(props) {
             ]}
           />
         </div>
+
         <Section3 />
+        
         <Section4 />
-        {/* <Section5 /> */}
+
+        <div className={classes.container}>
+          <ProvideCarousel
+            image={require("assets/img/marketing-image-4.png")}
+            phones={OurAppsPhoneImages}
+            title={'EASY TO USE'}
+            description={'Start Your First Paperless Checklist'}
+            content={'All Apps have date, time and GPS location stamp. Most Apps have photo-attached and electronic signature features.'}
+            explain={null}
+            details={[]}
+          />
+        </div>
+
         <FreeTrialCard 
           title={'Start 14 Days Free Trial'}
           description={'Try fully functioning OHS management systems today with no risk and no obligation!'}

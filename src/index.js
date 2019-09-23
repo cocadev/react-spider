@@ -23,9 +23,8 @@ browserHistory.listen((location, action) => {
   window.scrollTo(0, 0);
 });
 
-
 ReactDOM.render(
-  <Router history={hist} history={browserHistory}>
+  <Router history={hist && browserHistory} >
     <ThemeProvider theme={theme}>
       <Switch>
         <Route path="/apps" component={OurApps} />
