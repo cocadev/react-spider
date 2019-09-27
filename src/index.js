@@ -14,6 +14,7 @@ import PrivacyPolicy from "./screens/PrivacyPolicy";
 import AppUsagePolicy from "./screens/AppUsagePolicy";
 import About from "./screens/About";
 import NoMatch from "./screens/NoMatch"
+import AppDetail from "./screens/AppDetail";
 
 var hist = createBrowserHistory();
 
@@ -28,6 +29,8 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
       <Switch>
         <Route path="/apps" component={OurApps} />
+        <Route path="/detail" component={AppDetail} />
+
         <Route path="/price" component={Price} />
         <Route path="/tutorial" component={AppTutorials} />
         <Route path="/privacy" component={PrivacyPolicy} />

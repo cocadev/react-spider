@@ -11,8 +11,8 @@ import Section4 from "./Section4/index";
 import Section5 from "./Section5/index";
 import Section6 from "./Section6/index";
 import Footer from "../Footer/index";
-import { makeStyles } from "@material-ui/core/styles";
 import ProvideDashboard from "components/Atoms/ProvideDashboard";
+import { makeStyles } from "@material-ui/core/styles";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -39,10 +39,11 @@ export default function LandingPage(props) {
       />
       <Carousel />
       <div className={classNames(classes.main, classes.mainRaised)}>
+
         <div className={classes.container}>
           <Section1 />
         </div>
-        {/* <Section2 /> */}
+
         <ProvideDashboard 
             image={require("assets/img/front-img.png")}
             title={'WHAT WE DO'}
@@ -54,9 +55,11 @@ export default function LandingPage(props) {
               { title: 'NDIS Audit Systems', content: 'We provide modern software development practices for NDIS providers without outdated paper systems.'}
             ]}
           />
+
         <div className={classes.container}>
           <Section3 />
         </div>
+
         <Section4 />
         <Section5 />
         <Section6 />

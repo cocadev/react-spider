@@ -273,5 +273,8 @@ export default {
         bottom: "0",
         left: "0",
         padding: "1.25rem"
+    },
+    pt_25: {
+        paddingTop: "5rem"
     }
 };

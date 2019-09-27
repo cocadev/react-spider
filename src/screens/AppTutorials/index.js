@@ -28,7 +28,6 @@ export default function AppTutorials(props) {
       />
       <div className={classNames(classes.main, classes.mainRaised)}>
 
-        {/* <Section1 /> */}
         <BackgroundHeader 
           content1={'Available on iOS &'}
           content2={'Android Systems'}
