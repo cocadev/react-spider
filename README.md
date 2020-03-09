@@ -1,1 +1,1 @@
-# [Desert Software for React]
+# [Software for ReactJS Application]
