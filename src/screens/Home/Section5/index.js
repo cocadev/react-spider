@@ -63,7 +63,7 @@ function Item(props) {
         <h4 className={classes.cardTitle}>{props.title}</h4>
         <h4 className={classes.company}>{'Client of Company'}</h4>
         <div className={classes.hr} />
-        <p className={classes.description}>{'"We are a full-lifecycle software development company that combines Experience Design, Complex Engineering to give you the best software product."'}</p>
+        <p className={classes.description}>{'"We are a full-lifecycle Man development company that combines Experience Design, Complex Engineering to give you the best Man product."'}</p>
       </CardBody>
     </Card>
   )

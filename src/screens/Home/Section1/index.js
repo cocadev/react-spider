@@ -45,7 +45,7 @@ export default function Section1() {
               titleCss={classes.title3}
               learn={classes.learn3}
               descriptionCss={classes.description3}
-              description={'We are here to design the NDIS Audit Software and Apps customers need away with outdated paper system.'}
+              description={'We are here to design the NDIS Audit Man and Apps customers need away with outdated paper system.'}
             />
           </Grid>
         </Grid>

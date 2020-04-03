@@ -45,14 +45,14 @@ export default function LandingPage(props) {
         </div>
 
         <ProvideDashboard 
-            image={require("assets/img/front-img.png")}
+            image={require("assets/img/widescreen-3.jpg")}
             title={'WHAT WE DO'}
             description={'Product Development for Better Business'}
-            content={'Desert Software is for all types of business, creating innovative products that empower our customers to grow.'}
+            content={'Spider Man is for all types of business, creating innovative products that empower our customers to grow.'}
             details={[
               { title: 'OHS Management Systems', content: 'We develop Apps with dashboards to help customers complete OHS audit.'},
               { title: 'IT Services & Consultancy', content: 'We use the latest technologies to design the products the customers need.'},
-              { title: 'NDIS Audit Systems', content: 'We provide modern software development practices for NDIS providers without outdated paper systems.'}
+              { title: 'NDIS Audit Systems', content: 'We provide modern Man development practices for NDIS providers without outdated paper systems.'}
             ]}
           />
 

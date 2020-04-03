@@ -1,1 +1,1 @@
-# [Software for ReactJS Application]
+# [Man for ReactJS Application]

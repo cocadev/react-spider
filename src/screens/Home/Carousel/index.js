@@ -30,9 +30,9 @@ export default function HeaderView() {
   const classes = useStyles();
 
   const SLIDERS = [
-    { img: classes.backgroundImage1, title: 'Custom Software Development', description: 'Everything You Need for OHS Management' },
-    { img: classes.backgroundImage2, title: 'We Work Remotely 24/7', description: 'We Provide Best IT Services for You' },
-    { img: classes.backgroundImage3, title: 'Optimize NDIS Systems', description: 'Innovative Solutions for NDIS Management' }
+    { img: classes.backgroundImage1, title: 'Custom Man Development', description: 'The Hotel of Home Search' },
+    { img: classes.backgroundImage2, title: 'We Work Remotely 24/7', description: 'The Market of Home Search' },
+    { img: classes.backgroundImage3, title: 'Optimize Movie Systems', description: 'The Movie of Home Search' }
   ]
   return (
     <Carousel {...settings}>
@@ -96,7 +96,7 @@ function Slider(props) {
           >
             <Box>
               <iframe 
-                title="DesertSoftware Video"
+                title="SpiderMan Video"
                 className={classes.video}
                 src="https://www.youtube.com/embed/zYpb_4rcWl4" 
                 frameBorder="0" 

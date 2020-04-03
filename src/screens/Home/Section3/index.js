@@ -28,7 +28,7 @@ export default function Section2() {
 
             <h5 className={classes.title}>WHAT WE RECOMMEND</h5>
             <h1 className={classes.content}>Our Top Rated Products</h1>
-            <h3 className={classes.description}>Desert Software is for all types of business, creating innovative products that empower our customers to grow.</h3>
+            <h3 className={classes.description}>Spider Man is for all types of business, creating innovative products that empower our customers to grow.</h3>
 
             <Carousel {...settings}>
               {DATA1.map((item, key) => (

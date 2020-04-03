@@ -76,22 +76,22 @@ export default function Section1() {
                 <Grid item xs={12} sm={6} md={5}>
                   <div className={classes.info}>
                     <h4 className={classes.title}>Contact Info</h4>
-                    <p className={classes.note}><i className="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp; info@desertsoftware.com.au</p>
-                    <p className={classes.note}><i className="fa fa-phone-square"></i>&nbsp;&nbsp;&nbsp;+61 3 9759 6266</p>
+                    <p className={classes.note}><i className="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp; info@kingofdevs.com.ph</p>
+                    <p className={classes.note}><i className="fa fa-phone-square"></i>&nbsp;&nbsp;&nbsp;+21 3 9759 6266</p>
                     <p className={classes.note}><i className="fas fa-fax"></i>&nbsp;&nbsp;&nbsp;+61 3 9753 2995</p>
                     <div className={classes.iconView}>
                       <div>
-                        <a href="https://twitter.com/desert_software">
+                        <a href="https://twitter.com/Spider_Man">
                           <span className={classes.icon}><i className="fab fa-twitter-square"></i></span>
                         </a>
                       </div>
                       <div>
-                        <a href="https://www.linkedin.com/company/desert-software-management-systems">
+                        <a href="https://www.linkedin.com/company/Spider-Man-management-systems">
                           <span className={classes.icon}><i className="fab fa-linkedin"></i></span>
                         </a>
                       </div>
                       <div>
-                        <a href="https://www.facebook.com/Desert-Software-180734486011135">
+                        <a href="https://www.facebook.com/Spider-Man-180734486011135">
                           <span className={classes.icon}><i className="fab fa-facebook-square"></i></span>
                         </a>
                       </div>

@@ -31,18 +31,18 @@ export default function Footer() {
             <div className={classes.section}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={12} md={4}>
-                        <p className={classes.title}>DESERT SOFTWARE</p>
-                        <p className={classes.content}>Desert Software is a boutique digital transformation consultancy & software development company that provides IT solutions.</p>
+                        <p className={classes.title}>Spider Man</p>
+                        <p className={classes.content}>Spider Man is a boutique digital transformation consultancy & Man development company that provides IT solutions.</p>
                     </Grid>
                     <Grid item xs={12} sm={12} md={4}>
                         <p className={classes.title}>FIND US</p>
-                        <p className={classes.tax}><i className="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;info@desertsoftware.com.au</p>
-                        <p className={classes.tax}><i className="fa fa-phone-square"></i>&nbsp;&nbsp;&nbsp;+61 3 9759 6266</p>
+                        <p className={classes.tax}><i className="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;info@kingofdevs.com.ph</p>
+                        <p className={classes.tax}><i className="fa fa-phone-square"></i>&nbsp;&nbsp;&nbsp;+21 3 9759 6266</p>
                         <p className={classes.tax}><i className="fas fa-fax"></i>&nbsp;&nbsp;&nbsp;+61 3 9753 2995</p>
                     </Grid>
                     <Grid item xs={12} sm={12} md={4}>
                         <p className={classes.title}>ABOUT THIS SITE</p>
-                        <p className={classes.content}>Information contained in this site is NOT to be re-produced without written permission from DESERTSOFTWARE.COM.AU</p>
+                        <p className={classes.content}>Information contained in this site is NOT to be re-produced without written permission from kingofdevs.com.ph</p>
                     </Grid>
                 </Grid>
             </div>
@@ -59,7 +59,7 @@ export default function Footer() {
                     </ListItem>
                 </List>
                 <div className={classes.text}>
-                    Copyright&copy; {1900 + new Date().getYear()} Desert Software. All forms and Apps are copyright {1900 + new Date().getYear()}
+                    Copyright&copy; {1900 + new Date().getYear()} Spider Man. All forms and Apps are copyright {1900 + new Date().getYear()}
                 </div>
             </div>
             <Button

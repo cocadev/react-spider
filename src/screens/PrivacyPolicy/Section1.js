@@ -17,9 +17,9 @@ export default function Section1() {
       <div>
         <div>
           <div className={classnames(texts.h007, texts.center)}>PRIVACY POLICY</div><p></p>
-          <div className={classnames(texts.h007, texts.center)}>Deserts Software Pty Ltd</div><p></p>
+          <div className={classnames(texts.h007, texts.center)}>Spiders Man Pty Ltd</div><p></p>
           <hr />
-          <div>This website is owned and operated by <span className={texts.h007}>Desert Software Pty Ltd. </span> We are committed to protecting the privacy of our visitors while they interact with the content, products and services on this site known as “desertsoftware.com.au“.  This Privacy Policy applies to the Site and Applications only. It does not apply to other websites to which we link.  Because we gather certain types of information about our users, we want you to understand what information we collect about you, how we collect it, how that information is used, and how you can control our disclosure of it. You agree that your use of the Site signifies your assent to this Privacy Policy. If you do not agree with this Privacy Policy, please do not use the Site or Applications.</div><p></p>
+          <div>This website is owned and operated by <span className={texts.h007}>Spider Man Pty Ltd. </span> We are committed to protecting the privacy of our visitors while they interact with the content, products and services on this site known as “kingofdevs.com.ph“.  This Privacy Policy applies to the Site and Applications only. It does not apply to other websites to which we link.  Because we gather certain types of information about our users, we want you to understand what information we collect about you, how we collect it, how that information is used, and how you can control our disclosure of it. You agree that your use of the Site signifies your assent to this Privacy Policy. If you do not agree with this Privacy Policy, please do not use the Site or Applications.</div><p></p>
           <div className={texts.h007}>1)  Information Collected</div><p></p>
           <div>We collect two types of information from you:
             <ol>
@@ -45,7 +45,7 @@ export default function Section1() {
             <ul>
               <li>Cookies</li>
             </ul>
-            <div>A cookie is a piece of data stored on the user’s computer tied to information about the user. <em>Desert Software Pty Ltd</em> uses cookies to store visitor’s preferences and to record session information. We do not and will not use cookies to collect private information from any user that such user did not intentionally submit to us.</div>
+            <div>A cookie is a piece of data stored on the user’s computer tied to information about the user. <em>Spider Man Pty Ltd</em> uses cookies to store visitor’s preferences and to record session information. We do not and will not use cookies to collect private information from any user that such user did not intentionally submit to us.</div>
 
             <ul>
               <li>User Login</li>
@@ -59,17 +59,17 @@ export default function Section1() {
 
             <div className={texts.h007}>2)  Referrals</div><p></p>
 
-            <div>You may choose to invite friends to join Desert Software Pty Ltd by sending invitation emails via our invite feature. Desert Software Pty Ltd stores the email addresses you provide so that the respondents may be added to your social network, confirm orders/purchases and also to send reminders of the invitations. Desert Software Pty Ltd does not sell these email addresses or use them to send any other communication besides invitations and invitation reminders. Recipients of invitations may contact Desert Software Pty Ltd to request removal of their information from our database.</div><p></p>
+            <div>You may choose to invite friends to join Spider Man Pty Ltd by sending invitation emails via our invite feature. Spider Man Pty Ltd stores the email addresses you provide so that the respondents may be added to your social network, confirm orders/purchases and also to send reminders of the invitations. Spider Man Pty Ltd does not sell these email addresses or use them to send any other communication besides invitations and invitation reminders. Recipients of invitations may contact Spider Man Pty Ltd to request removal of their information from our database.</div><p></p>
 
             <div className={texts.h007}>3)  How We Use Your Information </div><p></p>
 
-            <div>Desert Software Pty Ltd only uses your personal information for the original purposes it was given. Your personal information will not be sold or otherwise transferred to unaffiliated third parties without your approval at the time of collection.</div><p></p>
+            <div>Spider Man Pty Ltd only uses your personal information for the original purposes it was given. Your personal information will not be sold or otherwise transferred to unaffiliated third parties without your approval at the time of collection.</div><p></p>
 
-            <div>Desert Software Pty Ltd will not disclose, use, give or sell any personal information to third parties for any purposes other than to our suppliers and other third parties who need to know in order to deliver services on behalf of Desert Software Pty Ltd unless required to do so by law. Further, Desert Software Pty Ltd reserves the right to contact you regarding matters relevant to the underlying service provided and/or the information collected.</div><p></p>
+            <div>Spider Man Pty Ltd will not disclose, use, give or sell any personal information to third parties for any purposes other than to our suppliers and other third parties who need to know in order to deliver services on behalf of Spider Man Pty Ltd unless required to do so by law. Further, Spider Man Pty Ltd reserves the right to contact you regarding matters relevant to the underlying service provided and/or the information collected.</div><p></p>
 
             <div>Please note that personally identifiable information is used only to provide you with a more enjoyable, convenient online experience and to help us identify and/or provide information, products or services that may be of interest to you. We use your personally identifiable information to support and enhance your use of the Site and its features, including without limitation: fulfilling your order; providing customer service; tracking email invitations you send; and otherwise supporting your use of the Site.</div><p></p>
 
-            <div>Desert Software Pty Ltd may use your personal information for target advertising toward you based on things such as region, gender, interests, goals, habits, etc.</div>
+            <div>Spider Man Pty Ltd may use your personal information for target advertising toward you based on things such as region, gender, interests, goals, habits, etc.</div>
 
             <div>We may permit certain trusted third parties to track usage, analyse data such as the source address that a page request is coming from, your IP address or domain name, the date and time of the page request, the referring Web site (if any) and other parameters in the URL. This is collected in order to better understand our Web site usage, and enhance the performance of services to maintain and operate the Site and certain features on the Site. We may use third parties to host the Site; operate various features available on the Site; send emails; analyse data; provide search results and links and assist in fulfilling your orders.</div><p></p>
 
@@ -77,7 +77,7 @@ export default function Section1() {
 
             <div>We may transfer personally identifiable information as an asset in connection with a proposed or actual merger or sale (including any transfers made as part of an insolvency or bankruptcy proceeding) involving all or part of our business or as part of a corporate reorganisation, stock sale or other change in control.</div><p></p>
 
-            <div>Desert Software Pty Ltd may disclose Contact Information in special cases where we have reason to believe that disclosing this information is necessary to identify, contact or bring legal action against someone who may be violating our terms and conditions of use or may be causing injury or interference with our rights, property, our customers or anyone who could be harmed by such activities.</div><p></p>
+            <div>Spider Man Pty Ltd may disclose Contact Information in special cases where we have reason to believe that disclosing this information is necessary to identify, contact or bring legal action against someone who may be violating our terms and conditions of use or may be causing injury or interference with our rights, property, our customers or anyone who could be harmed by such activities.</div><p></p>
 
             <div>WE ARE NOT LIABLE OR RESPONSIBLE FOR THE PERSONALLY IDENTIFIABLE OR OTHER INFORMATION YOU CHOOSE TO SUBMIT IN FORUMS SUCH AS A BULLETIN BOARD, CHAT ROOM OR ANY OTHER PUBLICLY ACCESSIBLE AREA OF THE SITE.</div><p></p>
 
@@ -91,17 +91,17 @@ export default function Section1() {
 
             <div className={texts.h007}>5) Third Party Advertising </div><p></p>
 
-            <div>Advertisements appearing on this Site may be delivered to you by Desert Software Pty Ltd or one of our Web advertising partners. Our Web advertising partners may set cookies. Doing this allows the advertising partners to recognise your computer each time they send you an advertisement. In this way, they may compile information about where you, or others who are using your computer, saw their advertisements and determine which advertisements are clicked. This information allows an advertising partner to deliver targeted advertisements that they believe will be of most interest to you. Desert Software Pty Ltd does not have access to or control of the cookies that may be placed by the third party advertising servers of ad partners.</div><p></p>
+            <div>Advertisements appearing on this Site may be delivered to you by Spider Man Pty Ltd or one of our Web advertising partners. Our Web advertising partners may set cookies. Doing this allows the advertising partners to recognise your computer each time they send you an advertisement. In this way, they may compile information about where you, or others who are using your computer, saw their advertisements and determine which advertisements are clicked. This information allows an advertising partner to deliver targeted advertisements that they believe will be of most interest to you. Spider Man Pty Ltd does not have access to or control of the cookies that may be placed by the third party advertising servers of ad partners.</div><p></p>
 
-            <div>This privacy statement covers the use of cookies by Desert Software Pty Ltd and does not cover the use of cookies by any of its advertisers.</div><p></p>
+            <div>This privacy statement covers the use of cookies by Spider Man Pty Ltd and does not cover the use of cookies by any of its advertisers.</div><p></p>
 
             <div className={texts.h007}>6) Accessing and Updating Your Personal Information and Preferences </div><p></p>
 
-            <div>We provide mechanisms for updating and correcting your personal information for many of our services.  If you are a registered user, you may access and update your registration information and your preferences to receive email or other communications from us by sending an email to <a href="mailto:info@desertsoftware.com.au">info@desertsoftware.com.au</a></div><p></p>
+            <div>We provide mechanisms for updating and correcting your personal information for many of our services.  If you are a registered user, you may access and update your registration information and your preferences to receive email or other communications from us by sending an email to <a href="mailto:info@kingofdevs.com.ph">info@kingofdevs.com.ph</a></div><p></p>
 
             <div className={texts.h007}>7) Email Choice/Opt-out </div><p></p>
 
-            <div>If any user who receives an email from the Site and would prefer not to receive such communications in the future, [he or she] can do so by following the instructions in the emails.  In addition, you may send an email to info@desertsoftware.com.au. We will make commercially reasonable efforts to implement your opt-out requests promptly, but you may still receive communications from us for up to ten business days as we process your request.</div><p></p>
+            <div>If any user who receives an email from the Site and would prefer not to receive such communications in the future, [he or she] can do so by following the instructions in the emails.  In addition, you may send an email to info@kingofdevs.com.ph. We will make commercially reasonable efforts to implement your opt-out requests promptly, but you may still receive communications from us for up to ten business days as we process your request.</div><p></p>
 
             <div className={texts.h007}>8) Children’s Privacy and Parental Controls </div><p></p>
 
@@ -113,17 +113,17 @@ export default function Section1() {
 
             <div className={texts.h007}>10) Notification of Changes </div><p></p>
 
-            <div>Desert Software Pty Ltd who owns and operates the website known as desertsoftware.com.au reserves the right to change this Privacy Policy from time to time at its sole discretion. If at some point in the future, there is a change to our Privacy Policy, unless we obtain your express consent, such change will only apply to information collected after the revised Privacy Policy took effect. Your continued use of the Site indicates your assent to the Privacy Policy as posted.</div><p></p>
+            <div>Spider Man Pty Ltd who owns and operates the website known as kingofdevs.com.ph reserves the right to change this Privacy Policy from time to time at its sole discretion. If at some point in the future, there is a change to our Privacy Policy, unless we obtain your express consent, such change will only apply to information collected after the revised Privacy Policy took effect. Your continued use of the Site indicates your assent to the Privacy Policy as posted.</div><p></p>
 
             <div className={texts.h007}>11) Opinions, Reviews, comments &amp; Selections </div><p></p>
 
-            <div>The opinions, reviews, comments and selections displayed on Desert Software Pty Ltd are strictly the opinions of Desert Software Pty Ltd and its staff. In no way can these opinions, reviews, comments or any other statements or selections made by Desert Software Pty Ltd and its staff  be liable by any means and recommend users to seek their own advice or opinion  before using any of the information provided. The information provided is of only the opinion of Desert Software Pty Ltd and its staff. If the opinions, comments, views or selections are used by oneself, Desert Software Pty Ltd and staff cannot be sued or made responsible or liable for ones actions and in using any information located on desertsoftware.com.au understand and do so at their own risk.</div><p></p>
+            <div>The opinions, reviews, comments and selections displayed on Spider Man Pty Ltd are strictly the opinions of Spider Man Pty Ltd and its staff. In no way can these opinions, reviews, comments or any other statements or selections made by Spider Man Pty Ltd and its staff  be liable by any means and recommend users to seek their own advice or opinion  before using any of the information provided. The information provided is of only the opinion of Spider Man Pty Ltd and its staff. If the opinions, comments, views or selections are used by oneself, Spider Man Pty Ltd and staff cannot be sued or made responsible or liable for ones actions and in using any information located on kingofdevs.com.ph understand and do so at their own risk.</div><p></p>
 
             <div className={texts.h007}>12)  CONTACT INFORMATION: </div><p></p>
 
             <div>If you have any questions or concerns regarding this Privacy Policy please contact:</div><p></p>
 
-            <div className={texts.h007}>info@desertsoftware.com.au </div><br/><br/><br/>
+            <div className={texts.h007}>info@kingofdevs.com.ph </div><br/><br/><br/>
           </div>
         </div>
       </div>

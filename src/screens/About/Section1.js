@@ -12,8 +12,8 @@ export default function Section1() {
       <div className={classes.section}>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={6}>
-            <h4 className={classes.content}>{'DESERT SOFTWARE'}</h4>
-            <h4 className={classes.title}>{'"The OHS Environmental & Quality Integrated Management System"'}</h4>
+            <h4 className={classes.content}>{'Spider Man'}</h4>
+            <h4 className={classes.title}>{'"Find a lender who can offer competitive mortgage rates and help you with pre-approval."'}</h4>
             <br /><br />
           </Grid>
           <Grid item xs={12} sm={6} md={6}>
