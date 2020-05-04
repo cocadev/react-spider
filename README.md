@@ -1,3 +1,3 @@
-# [Man for ReactJS Application]
+# [Man for React.JS Application]
 
 <img src='Capture.JPG'>
